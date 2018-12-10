@@ -5,8 +5,8 @@
 ```
 $ git clone github.com/kisscloud/kiss-eureka-server.git
 $ cd kiss-eureka-server
-$ mvn package
-$ java -j kiss-eureka-server.jar
+$ mvn install && mvn package
+$ java -jar kiss-eureka-server.jar -Dspring.config.location=/path/to/application.properties 
 ```
 
 ## 2. 配置文件
