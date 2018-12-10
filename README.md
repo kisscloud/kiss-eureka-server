@@ -1,6 +1,6 @@
 # 服务发现中心
 
-## 程序运行
+## 1. 程序运行
 
 ```
 $ git clone github.com/kisscloud/kiss-eureka-server.git
@@ -9,7 +9,7 @@ $ mvn package
 $ java -j kiss-eureka-server.jar
 ```
 
-## 配置文件
+## 2. 配置文件
 
 编辑配置文件：
 
