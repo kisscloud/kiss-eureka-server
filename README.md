@@ -21,20 +21,19 @@ $ vim application.properties
 
 ```
 # 项目监听地址
-server.port=8761
-eureka.instance.hostname=localhost
-# 配置服务地址
-eureka.client.register-with-eureka=false
-eureka.client.fetch-registry=false
-eureka.client.service-url.defaultZone=http://${eureka.instance.hostname}:${server.port}/eureka/
-#eureka.client.register-with-eureka=false
-# 显示Eureka节点
-
-#eureka.register-with-eureka=false
-
-# 开发环境禁止自我保护
-eureka.server.enable-self-preservation=false
-
-# 配置服务名称
-spring.application.name=eureka-server
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enable-self-preservation: false
+spring:
+  application:
+    name: eureka-server
 ```
