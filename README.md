@@ -6,7 +6,7 @@
 $ git clone github.com/kisscloud/kiss-eureka-server.git
 $ cd kiss-eureka-server
 $ mvn install && mvn package
-$ java -jar kiss-eureka-server.jar -Dspring.config.location=/path/to/application.properties 
+$ java -jar kiss-eureka-server.jar -Dspring.config.location=/path/to/application.yml 
 ```
 
 ## 2. 配置文件
@@ -14,7 +14,7 @@ $ java -jar kiss-eureka-server.jar -Dspring.config.location=/path/to/application
 编辑配置文件：
 
 ```
-$ vim application.properties
+$ vim application.yml
 ```
 
 配置文件内容：
