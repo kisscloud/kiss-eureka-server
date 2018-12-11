@@ -20,7 +20,6 @@ $ vim application.properties
 配置文件内容：
 
 ```
-# 项目监听地址
 server:
   port: 8761
 eureka:
