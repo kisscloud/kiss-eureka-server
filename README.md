@@ -3,7 +3,7 @@
 ## 1. 程序运行
 
 ```
-$ git clone github.com/kisscloud/kiss-eureka-server.git
+$ git clone git@github.com:kisscloud/kiss-eureka-server.git
 $ cd kiss-eureka-server
 $ mvn install && mvn package
 $ java -jar kiss-eureka-server.jar -Dspring.config.location=/path/to/application.yml 
