@@ -20,8 +20,11 @@ $ vim application.yml
 配置文件内容：
 
 ```
+# 服务监听端口
 server:
   port: 8761
+
+# Eureka 配置
 eureka:
   instance:
     hostname: localhost
@@ -32,6 +35,8 @@ eureka:
     fetch-registry: false
   server:
     enable-self-preservation: false
+    
+# Spring 配置    
 spring:
   application:
     name: eureka-server
