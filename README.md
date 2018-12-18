@@ -5,7 +5,8 @@
 ```
 $ git clone git@github.com:kisscloud/kiss-eureka-server.git
 $ cd kiss-eureka-server
-$ mvn install && mvn package
+$ mvn install -Dmaven.test.skip=true
+$ mvn package -Dmaven.test.skip=true
 $ java -jar kiss-eureka-server.jar -Dspring.config.location=/path/to/application.yml 
 ```
 
